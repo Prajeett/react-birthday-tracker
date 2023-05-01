@@ -3,15 +3,19 @@ import data from './data';
 import List from './List';
 function App() {
   const [people, setPeople] = useState(data)
+  console.log(data);
   return <main>
     <section className="container">
       <h3>{people.length} birthday today</h3>
       <List people = {people}/>
-      <button onClick={() => console.log("clicked")
+      <button onClick={() => 
+      
+      setPeople([])
 
       }> Clear All</button>
     </section>
   </main>
+
 }
 
 export default App;
